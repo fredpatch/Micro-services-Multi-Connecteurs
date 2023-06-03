@@ -28,6 +28,20 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework:spring-webflux'
     testImplementation 'org.springframework.graphql:spring-graphql-test'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+    // https://mvnrepository.com/artifact/org.modelmapper/modelmapper
+    implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.1.1'
+    // https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-ri
+    implementation group: 'com.sun.xml.ws', name: 'jaxws-ri', version: '4.0.1', ext: 'pom'
+    // https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-ri
+    //implementation 'com.sun.xml.ws:jaxws-ri:4.0.1'
+    // https://mvnrepository.com/artifact/org.apache.cxf/cxf-spring-boot-starter-jaxws
+    implementation 'org.apache.cxf:cxf-spring-boot-starter-jaxws:4.0.1'
+
+
+
+
+
 }
 
 tasks.named('test') {
