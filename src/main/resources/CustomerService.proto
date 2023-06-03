@@ -2,17 +2,17 @@ syntax ="proto3";
 
 service CustomerService {
   rpc GetAllCustomers(GetAllCustomersRequest) returns (GetCustomersResponse);
-  rpc GetCustomerById(GetCustomerByIdRequest) returns (GetCustomerByIdResponse);
+  rpc GetCustomerById(GetCustomersByIdRequest) returns (GetCustomersByIdResponse);
 }
 message GetAllCustomersRequest{}
 message GetCustomersResponse{
   repeated Customer customers = 1;
 }
 
-message GetCustomerByIdRequest{
+message GetCustomersByIdRequest{
   int64 customerId=1;
 }
-message GetCustomerByIdResponse{
+message GetCustomersByIdResponse{
   Customer customer = 1;
 }
 

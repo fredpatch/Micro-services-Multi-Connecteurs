@@ -1,6 +1,5 @@
 package net.fred.customerdataservice.config;
 
-import jakarta.xml.ws.Endpoint;
 import lombok.AllArgsConstructor;
 import net.fred.customerdataservice.web.CustomerSoapController;
 import org.apache.cxf.Bus;
